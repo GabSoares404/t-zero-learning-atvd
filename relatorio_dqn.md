@@ -2,7 +2,7 @@
 
 **Nome:** Gabriel
 
-Link para o fork do repositório contendo `algorithms/dqn.py` atualizado: *[Adicione seu link aqui]*
+Link para o fork do repositório contendo `algorithms/dqn.py` atualizado: [https://github.com/GabSoares404/t-zero-learning-atvd](https://github.com/GabSoares404/t-zero-learning-atvd)
 
 ---
 
@@ -45,7 +45,7 @@ Foram testados `dqn.buffer_size=100`, `dqn.buffer_size=500` e o baseline `dqn.bu
 
 **Explicação:**
 Ao utilizar um buffer muito pequeno, surgem dois problemas cruciais para a estabilidade da rede. Primeiro, a **correlação dos dados** do minibatch é extremamente alta. Como as transições vêm de amostras muito recentes e sequenciais, elas não são i.i.d., o que viola as premissas de otimização em deep learning, enviesando fortemente a rede para a região do espaço de estados recém-visitada. 
-O segundo problema é o **esquecimento catastrófico (catastrophic forgetting)**. O buffer enche e sobrescreve as experiências antigas velozmente. Assim, a rede esquece comportamentos que já havia aprendido para certos estados, limitando a distribuição dos dados de treinamento e degradando severamente o retorno e os valores da Q-Network ao longo do tempo. Nossa previsão foi confirmada.
+O segundo problema é o **esquecimento catastrófico (catastrophic forgetting)**. O buffer enche e sobrescreve as experiências antigas velozmente. Assim, a rede esquece comportamentos que já havia aprendido para certos estados, limitando a distribuição dos dados de treinamento e degradando severamente o retorno e os valores da Q-Network ao longo do tempo. A previsão inicial foi confirmada.
 
 ---
 
